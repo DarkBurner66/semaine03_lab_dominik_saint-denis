@@ -29,19 +29,31 @@ a{
 p{ margin: 0;}
 h1{
     font-family:"Dosis", serif;
-    font-size: 43;
+    font-size: 43px;
     font-weight: bold;
+    margin: 0;
 }
 h2{
     font-family:"Dosis", serif;
-    font-size: 36;
+    font-size: 36px;
     font-weight: bold;
     margin: 0;
+}
+h3{
+    font-family:"Dosis", serif;
+    font-size:24px;
+    font-weight: bold;
+    margin: 0;
+    padding-bottom:8px;
+    margin-top: 32px;
 }
 /*------------------------------------
 COMPONENTS
 ------------------------------------*/
 /*header*/
+.logo img{
+    height:87px ;
+}
 header{
     background-color:white ;
 }
@@ -58,6 +70,7 @@ header ul{
 }
 header .logo{
     display: flex;
+    align-items: center;
     gap: 20px;
     padding: 20px 0;
 }
@@ -71,6 +84,7 @@ nav a{
     color: black;
     padding:4px 10px ;
     border-radius: 5px;
+    font-size: 16px;
 }
 nav a:hover{
     background-color:#0E5EA1 ;
@@ -105,7 +119,7 @@ nav a:hover{
     
 }
 .hero p{
-font-size: 20;
+font-size: 20px;
 color:#2FCB48 ;
 text-align: center;
 padding: 0 0 20px 0;
@@ -114,12 +128,48 @@ padding: 0 0 20px 0;
 .contenu{
     background-color:#E3E4E4 ;
 }
-.conteneur{
+.contenu .wrapper{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr; 
     justify-content: space-between;
-    gap: 20px;
+    gap:40px 20px ;
+    padding-top: 40px ;
+    padding-bottom: 40px;
+}
+.escapade{
+    grid-column: span 3;
 }
 article{
+    display: flex;
+    flex-direction: column;
     background-color: white;
+    padding: 10px  10px 0 10px ;
+    height: 714px;
+    border-bottom:solid #0E5EA1 5px ;
+}
+article p{
+    line-height: 160%;
+}
+.bouton{
+    align-self:center;
+    color:black;
+    background-color:#B7B7B7 ;
+    border-radius: 5px;
+    margin-bottom: 22px ;
+    padding: 8px 45px;
+    margin-top: auto;
+}
+.bouton:hover{
+    color:white;
+    background-color: #0E5EA1
+}
+/*footer*/
+footer{
+    background-color: black;
+
+}
+footer p{
+    color: white;
+    text-align: center;
+    padding:24px ;
 }
